@@ -20,7 +20,7 @@ EBTNodeResult::Type UBTTargetPointSelection::ExecuteTask(UBehaviorTreeComponent 
 
 		TArray<AActor*> AvailableTargetPoints = AICon->GetAvailableTargetPoints();
 		max = AvailableTargetPoints.Num()-1;
-		//This variable will contain a random index in order to determine the next possible point
+		//These variables will contain indices in order to determine the next possible point
 		int32 currentIndex,nextIndex;
 
 		//Here, we store the possible next target point
